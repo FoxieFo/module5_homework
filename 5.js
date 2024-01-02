@@ -2,8 +2,8 @@
 
 const items = ['blanket', 'pillow', 'mattress', 'sheets'];
 
-console.log(arr.length);
+console.log(items.length);
 
-arr.forEach(element => {
-    console.log(element);
-  });
+items.forEach(function(elem){
+    console.log(elem)
+})
