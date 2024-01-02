@@ -1,6 +1,6 @@
 // Задание 2
 
-// let x = true;
+let x = true;
 
 if (typeof x === 'number') {
     console.log('x — число')
