@@ -2,14 +2,22 @@
 
 const items = ['blanket', 'pillow', 'mattress', 'sheets', 'blanket'];
 
-let equalItems = true;
+let hasDuplicates = false;
 
 for (let i = 0; i < items.length; i++) {
-
-  if (items[i] !== items[i - 1]) {
-    equalItems = false;
-    break;
-  }
+    for (let j = i + 1; j < items.length; j++) {
+        if (items[i] === items [j]) {
+            hasDuplicates = true;
+            break;
+        }
+    }
+    if (hasDuplicates) {
+        break;
+    }
 }
 
-console.log(equalItems);
+if (hasDuplicates) {
+    console.log('true');
+  } else {
+    console.log('false');
+  }
